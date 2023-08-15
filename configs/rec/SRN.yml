@@ -55,9 +55,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./dataset_crop/train_images
+    data_dir: dataset_crop/train_images
     label_file_list:
-    - ./dataset_crop/crop_train_label.txt
+    - dataset_crop/crop_train_label.txt
     ratio_list:
     - 1
     transforms:
@@ -87,9 +87,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./dataset_crop/train_images
+    data_dir: dataset_crop/train_images
     label_file_list:
-    - ./dataset_crop/crop_train_label.txt
+    - dataset_crop/crop_train_label.txt
     ratio_list:
     - 1
     transforms:
