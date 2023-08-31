@@ -3,7 +3,7 @@ Global:
   use_gpu: true
   epoch_num: 500
   log_smooth_window: 20
-  print_batch_step: 5
+  print_batch_step: 1000
   save_model_dir: ./output/SRN
   save_epoch_step: 1
   eval_batch_step:
