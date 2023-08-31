@@ -1,7 +1,7 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 300
+  epoch_num: 500
   log_smooth_window: 20
   print_batch_step: 5
   save_model_dir: ./output/SRN
@@ -55,9 +55,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./dataset_crop/train_images
+    data_dir: ./new_train
     label_file_list:
-    - ./dataset_crop/crop_train_label.txt
+    - ./HandwrittenOCR/train_gt.txt
     ratio_list:
     - 1
     transforms:
@@ -87,9 +87,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./dataset_crop/train_images
+    data_dir: ./new_train
     label_file_list:
-    - ./dataset_crop/crop_train_label.txt
+    - ./HandwrittenOCR/train_gt.txt
     ratio_list:
     - 1
     transforms:
